@@ -2,7 +2,9 @@ import { ActionCreators } from "../app/expensesReducer";
 import * as axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'https://localhost:44386/Expenses',
+    //url for deploy
+    baseURL: 'https://my-expenses-api.azurewebsites.net',
+    // baseURL: 'https://my-expenses-api.azurewebsites.net',
 })
 
 export const GetExpenses = async (dispatch) => {
